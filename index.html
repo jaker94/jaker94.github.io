@@ -32,9 +32,9 @@
           <li class="nav__link">
             <a
               href=""
-              class="nav__link--anchor
-               link__hover-effect 
-               link__hover-effect--black"
+              class="nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
             >
               Projects</a
             >
@@ -50,13 +50,11 @@
             >
           </li>
           <li class="nav__link click">
-            <a href="" class="
-                nav__link--anchor 
-                link__hover-effect
-               link__hover-effect--black
-               "
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
             >
-              <i class="fa-solid fa-circle-half-stroke "></i
+              <i class="fa-solid fa-circle-half-stroke"></i
             ></a>
           </li>
         </ul>
@@ -78,12 +76,11 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="##" target="_blank" class="social__link click">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="##" target="_blank" class="social__link click">
-                <i class="fa-solid fa-file-pdf"></i>
-              </a>
-
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="##" target="_blank" class="social__link click">
+              <i class="fa-solid fa-file-pdf"></i>
+            </a>
           </div>
         </div>
       </header>
@@ -91,49 +88,146 @@
         <i class="fa-regular fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
-        <div class="scroll__icon click">
-        </div>
+        <div class="scroll__icon click"></div>
       </a>
-
+      <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about"> Here's a bit about me.</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+            <p class="modal__para"> I'm a 28 year old American <span class="text--orange">frontend software engineer</span>
+                with a strong passion for developing websites with great <span class="text--orange">user experiences.</span>
+                <br>
+                I currently work on extremely difficult engineering problems and learn from a team consisting
+                of some of the most <span class="text--orange">talented</span> and <span class="text--orange">experienced</span>
+                software engineers every day.
+            </p>
+            <div class="modal__languages">
+                <figure class= "modal__language">
+                    <img class= "modal__language--img" src="https://www.pngitem.com/pimgs/m/23-237471_vectors-free-icon-html5-download-logo-for-html.png" alt ="">
+                    <span class="language__name">HTML</span>
+                </figure>
+                <figure class= "modal__language">
+                    <img class= "modal__language--img" src="https://www.softorks.com/Images/css.jpg" alt ="">
+                    <span class="language__name">CSS</span>
+                </figure>
+                <figure class= "modal__language">
+                    <img class= "modal__language--img" src="https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png" alt ="">
+                    <span class="language__name">Javascript</span>
+                </figure>
+                <figure class= "modal__language">
+                    <img class= "modal__language--img" src="http://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem.png" alt ="">
+                    <span class="language__name">React</span>
+                </figure>
+            </div>
+        </div>
+        <div class="modal__half modal__contact"> 
+            <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+            <h4 class="modal__sub-title modal__sub-title--contact"> I'd love to hear from you.</h4>
+            <form id = "contact__form"action = "">
+                <div class="form__item">
+                    <label class= "form__item--label">Name</label>
+                    <input class="input" name="user_name "type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class= "form__item--label">Email</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class= "form__item--label">Message</label>
+                    <textarea class="input" name="message"type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit"> Send it my way</button>
+            </form>
+        </div>
+      </div>
     </section>
 
     <section class="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    Here are some of my <span class="text--orange">projects</span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Html, CSS, Javascript, Vue, Vuex
-                                </h4>
-                                <p class="project__descriptiom--para"> 
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Commodi nobis voluptas cupiditate! Porro sed aspernatur tenetur dolor, 
-                                    nimi ut dignissimos laudantium quisquam architecto debitis consectetur 
-                                    alias odio nostrum quaerat placeat!
-                                </p>
-                                <div class="project__description__links">
-                                    <a href="" class="project__description__link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="" class="project__description__link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, Javascript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi nobis voluptas cupiditate! Porro sed aspernatur
+                    tenetur dolor, nimi ut dignissimos laudantium quisquam
+                    architecto debitis consectetur alias odio nostrum quaerat
+                    placeat!
+                  </p>
+                  <div class="project__description__links">
+                    <a href="" class="project__description__link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" class="project__description__link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img class= "footer__logo--img"src="./assets/logo.svg" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="#"
+              class="footer__social--link
+               link__hover-effect 
+               link__hover-effect--white"
+            >
+              Github</a
+            >
+            <a
+              href="#"
+              class="footer__social--link 
+              link__hover-effect
+               link__hover-effect--white"
+            >
+              LinkedIn</a
+            >
+            <a
+              href="#"
+              class="footer__social--link
+               link__hover-effect 
+               link__hover-effect--white"
+            >
+              Contact</a
+            >
+            <a
+              href="#"
+              class="footer__social--link 
+              link__hover-effect 
+              link__hover-effect--white"
+            >
+              Resume</a
+            >
+          </div>
+          
+          <div class="footer__copyright">Copyright © 2022 Jacob Register</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

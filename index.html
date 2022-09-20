@@ -11,6 +11,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="./app.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("hwFZxrP-CJNPfG8Hh");
+   })();
+</script>
   </head>
   <body>
     <section id="landing-page">
@@ -84,7 +92,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-regular fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -123,14 +131,14 @@
         <div class="modal__half modal__contact"> 
             <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
             <h4 class="modal__sub-title modal__sub-title--contact"> I'd love to hear from you.</h4>
-            <form id = "contact__form"action = "">
+            <form id = "contact__form" onsubmit = "contact(event)">
                 <div class="form__item">
                     <label class= "form__item--label">Name</label>
-                    <input class="input" name="user_name "type="text" required></input>
+                    <input class="input" name="from_name"type="text" required></input>
                 </div>
                 <div class="form__item">
                     <label class= "form__item--label">Email</label>
-                    <input class="input" name="user_email" type="email" required></input>
+                    <input class="input" name="from_email" type="email" required></input>
                 </div>
                 <div class="form__item">
                     <label class= "form__item--label">Message</label>

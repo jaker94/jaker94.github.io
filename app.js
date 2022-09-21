@@ -2,6 +2,21 @@
 //service_5gg2gw9
 // hwFZxrP-CJNPfG8Hh
 
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    
+    contrastToggle = !contrastToggle;
+    if(contrastToggle === true) {
+        document.body.classList += " dark-theme"
+        
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
@@ -25,7 +40,7 @@ function contact(event) {
          })
 }
 
-let isModalOpen = false;
+
 function toggleModal() {
     if(isModalOpen) {
         isModalOpen = false;

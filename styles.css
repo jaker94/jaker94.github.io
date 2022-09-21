@@ -128,6 +128,36 @@ font-weight: 700;
     width: 100%;
 }
 
+nav,
+.scroll,
+header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms ease;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--openheader {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms ease;
+}
+
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-circle-half-stroke,
+.dark-theme .header__para 
+{
+    color:white;
+}
+
+.dark-theme section{
+    background-color:#242424;
+}
+
 /* 
 LANDING PAGE
 */
@@ -278,6 +308,7 @@ MODAL
     border-radius: 20px;
     overflow:hidden;
     display:flex;
+    z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
@@ -295,10 +326,17 @@ MODAL
     flex-direction: column;
     justify-content: center;
     position:relative;
+    transition: all 300ms ease-in;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact {
+    transform: translateX(0%)
 }
 
 .modal__about {
     background-color: rgb(245, 245, 245);
+    transform: translateX(-110%);
 }
 
 .modal__languages {
@@ -358,6 +396,7 @@ MODAL
 .modal__contact {
     background-color: #242424;
     color:white;
+    transform: translateX(110%);
 }
 
 .form__item {
@@ -403,7 +442,7 @@ MODAL
     align-items: center;
     justify-content: center;
     z-index: -1;
-    
+    display:none;
 }
 
 .modal__overlay--success {
@@ -416,6 +455,7 @@ MODAL
 
 .modal__overlay--visible {
     z-index: 1;
+    display:flex;
 }
 
 .fa-spinner {

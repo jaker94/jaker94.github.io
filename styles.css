@@ -518,6 +518,10 @@ Projects
     margin-bottom: 60px;
 }
 
+.project{ 
+    margin-bottom: 48px;
+}
+
 .project__img {
     width:100%;
 }
@@ -527,8 +531,7 @@ Projects
     border-radius: 20px;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow:hidden;
-}
-
+} 
 .project__wrapper:hover .project__description {
     opacity: 1;
     transform: translateY(-50%)
